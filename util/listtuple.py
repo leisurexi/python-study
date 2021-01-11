@@ -30,6 +30,11 @@ print(f'元组反转后: {list(reversed(tuple))}')
 print(f'元组排序后: {sorted(tuple)}')
 print(tuple)
 
+# 思考题：以下2中方式在效率上有什么区别？
+'''
+    区别主要在于list()是一个function call，Python的function call会创建stack，
+    并且进行一系列参数检查的操作，比较expensive，反观[]是一个内置的C函数，可以直接被调用，因此效率高。
+'''
 # 创建空列表
 # option A
 empty_list = list()

@@ -1,4 +1,4 @@
-# auther: leisurexi
+# author: leisurexi
 # date: 2021-01-11 23:25
 # 列表和元组示例，列表和元素都是一个可以放置任意数据类型的有序集合
 

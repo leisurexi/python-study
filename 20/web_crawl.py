@@ -1,5 +1,6 @@
 # author: leisurexi
 # date: 2021-01-20 23:19
+# Python 协程实现
 
 import time
 import asyncio
@@ -14,11 +15,11 @@ async def crawl_page(url):
 
 async def main(urls):
     tasks = [asyncio.create_task(crawl_page(url)) for url in urls]
-    for task in tasks:
-        # await task
-        await asyncio.gather(*tasks)
-    # for url in urls:
-    #     await crawl_page(url)
+
+    # for task in tasks:
+    #     await task
+
+    await asyncio.gather(*tasks)
 
 
 if __name__ == '__main__':
